@@ -36,6 +36,8 @@ router.get('/userlogout' , userLogout)
 router.get('/all-users',authToken,allUsersData)
 router.post('/update-users',authToken , updateUser)
 
+// checking router
+router.get('/check' , (req , res) => res.send('Hello every one checking router'))
 // Apis for products
 router.post('/upload-product', authToken, UploadProductController)
 router.get('/all-products',getAllProduct)

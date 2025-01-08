@@ -21,7 +21,7 @@ app.use("/api" , router)
 
 
 const PORT = process.env.PORT 
-// console.log(PORT)
+console.log(PORT)
 connectDb().then(
     app.listen(PORT , () => {
         console.log('server is running')
